@@ -10,21 +10,25 @@
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/favicon-16x16.png">
   <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/site.webmanifest">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 </head>
 
 <body <?php body_class(); ?>>
-  <nav id="nav_main">
-    <div class="nav-bar">
-      <a id="logo" href="/">
-        <h1>ZM</h1>
-      </a>
+  <div class="container">
+    <nav id="nav_main">
+      <div class="nav-bar">
+        <!-- <a id="logo" href="/">
+          <h1>Mobile Blast Guy</h1>
+        </a> -->
 
-      <button id="nav_toggle" aria-label="Toggle navigation" aria-expanded="false">
-        Menu
-      </button>
-    </div>
-    <div id="nav_links">
-      <ul class="nav-list">
-      </ul>
-    </div>
-  </nav>
+        <button id="nav_toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div id="nav_links">
+        <ul class="nav-list">
+        </ul>
+      </div>
+    </nav>

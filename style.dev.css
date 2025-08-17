@@ -252,28 +252,237 @@ textarea {
    Custom styles
    ========================================================================== */
 
+@font-face {
+  font-family: 'RBNo3.1';
+  src: url('/wp-content/themes/mobileblastguy.com/assets/js/font/RBNo31-Medium.woff2') format('woff2'),
+    url('wp-content/themes/mobileblastguy.com/assets/js/font/RBNo31-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RBNo3.1 Light';
+  src: url('/wp-content/themes/mobileblastguy.com/assets/font/RBNo31-Light.woff2') format('woff2'),
+    url('/wp-content/themes/mobileblastguy.com/assets/font/RBNo31-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RBNo3.1 Book';
+  src: url('/wp-content/themes/mobileblastguy.com/assets/font/RBNo31-Book.woff2') format('woff2'),
+    url('/wp-content/themes/mobileblastguy.com/assets/font/RBNo31-Book.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  /* outline:1px solid grey; */
 }
 
-@media (min-width: 414px) {
-
+:root {
+  font-family: 'RBNo3.1 Light', sans-serif;
+  font-size: 16px;
+  --orange: #ef6423;
+  --dark: #1a1a1a;
+  --grey: #e8e6e6;
 }
 
-@media (min-width: 768px) {
-  
+body {
+  background-color: var(--dark);
+  color: var(--grey);
+  margin: 0;
+}
+
+#nav_main {}
+
+.nav-bar {
+  background-color: #2b2b2b;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#nav_toggle {
+  background-color: var(--dark);
+  color: var(--grey);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+#nav_toggle span {
+  background-color: currentColor;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 2rem;
+  height: .25rem;
+  margin: 0.25rem auto;
+  display: block;
+  border-radius: 2px;
 }
 
 
-@media (min-width: 1024px) {
-
+.open #nav_toggle span:first-child {
+  transform: rotate(45deg) translate(6px, 5px);
 }
 
-@media (min-width: 1280px) {
-
+.open #nav_toggle span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-20px);
 }
 
-@media (min-width: 1536px) {
+.open #nav_toggle span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
+
+
+#logo {
+  font-family: 'RBNo3.1 Book', sans-serif;
+  font-size: 1rem;
+  color: var(--dark);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#hero {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #161616;
+  /* margin: 1rem; */
+  /* border-radius: 0.5rem; */
+}
+
+#hero h3 {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--orange);
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-family: 'RBNo3.1', sans-serif;
+  font-weight: 500;
+}
+
+.btn.btn-primary {
+  background-color: #0d8514;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 1rem;
+}
+#services {
+
+}
+#services h2 {
+  /* text-align: center; */
+  text-transform: uppercase;
+  font-family: 'RBNo3.1', sans-serif;
+  font-weight: 500;
+  /* margin-bottom: 2rem; */
+}
+#service_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.service {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  margin: 0;
+  background-size: cover;
+  box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  background-position: center;
+  overflow: hidden;
+}
+
+.service a {
+  background: linear-gradient(45deg, #2b2b2b, transparent);
+  padding: 1rem;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+.service a img {
+  filter:drop-shadow(0px 0px 5px rgba(0,0,0,0.75));
+}
+
+#service_automotive {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-automotive.jpg');
+}
+
+#service_marine {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-marine.jpg');
+}
+
+#service_concrete {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-concrete.jpg');
+}
+
+#service_wood {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-wood.jpg');
+}
+
+#service_fleet {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-fleet-vehicle.jpg');
+}
+
+#service_fire {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-fire.jpg');
+}
+
+#service_graffiti {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-graffiti.jpg');
+}
+
+#service_line_stripe {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-line-stripe.jpg');
+}
+
+#service_heavy_equipment {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-heavy-equipment.jpg');
+}
+
+#service_pools {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-pools.jpg');
+}
+
+#service_offshore {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-offshore.jpg');
+}
+
+@media (min-width: 414px) {}
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}

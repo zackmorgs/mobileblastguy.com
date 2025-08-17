@@ -1,9 +1,6 @@
-<footer id="footer_main">
+</div>
 
-  <p>&copy; <?php echo date(format: 'Y'); ?> Mobile Blast Guy</p>
-</footer>
-<?php wp_footer(); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/script.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.min.js"></script>
 </body>
 
 </html>
