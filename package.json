@@ -1,0 +1,24 @@
+{
+  "name": "mobileblastguy.com",
+  "version": "1.0.0",
+  "description": "A classic WordPress theme for Ohio dustless blasting company [Mobile Blast Guy](https://www.mobileblastguy.com/).",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all -p watch:js watch:css",
+    "build:js": "esbuild ./assets/js/app.js --minify --sourcemap --outfile=./assets/js/app.min.js",
+    "watch:js": "esbuild ./assets/js/app.js --minify --sourcemap --outfile=./assets/js/app.min.js --watch",
+    "build:css": "npx postcss style.dev.css --use autoprefixer --output ./style.css",
+    "watch:css": "npx postcss style.dev.css --use autoprefixer --output ./style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.25.6",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-nested": "^7.0.2"
+  }
+}
