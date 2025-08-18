@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<header class="hero">
-    <h3>About</h3>
-</header>
-<section id="content_about">
+<div class="header">
+    <h3><?php the_title(); ?></h3>
+</div>
+<section id="content_single">
     <article class="content">
         <?php
         if (have_posts()):
