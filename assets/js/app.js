@@ -29,10 +29,16 @@ const handleActiveNavLink = () => {
     });
 };
 
-
+const slider = () => {
+    document.querySelector('.slider-control').addEventListener('input', (e) => {
+        const after = document.querySelector('.slider .after');
+        after.style.width = `${e.target.value}%`;
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('loaded');
     handleNavState();
     handleActiveNavLink();
+    slider();
 });
