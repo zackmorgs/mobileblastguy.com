@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-<main>
+<main id="graffiti">
     <header class="hero">
-        <h3>Graffiti Removal Services</h3>
+        <div class="hero-content">
+            <h3>Graffiti Removal Services</h3>
+        </div>
     </header>
     <section>
 

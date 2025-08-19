@@ -33,22 +33,36 @@
             <a href="/" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="/about" class="nav-link">About</a>
+            <a href="/about/" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="/services" class="nav-link">Services</a>
+            <a href="/services/" class="nav-link">Services</a>
+            <!-- <ul class="dropdown">
+              <li><a href="/services/automotive"></a></li>
+              <li><a href="/services/marine"></a></li>
+              <li><a href="/services/concrete"></a></li>
+              <li><a href="/services/wood"></a></li>
+              <li><a href="/services/fleet-vehicles"></a></li>
+              <li><a href="/services/fire-restoration"></a></li>
+              <li><a href="/services/graffiti-removal"></a></li>
+              <li><a href="/services/line-stripe"></a></li>
+              <li><a href="/services/heavy-equipment"></a></li>
+              <li><a href="/services/pools"></a></li>
+              <li><a href="/services/housing"></a></li>
+              <li><a href="/services/more"></a></li>
+            </ul> -->
           </li>
           <li class="nav-item">
-            <a href="/contact" class="nav-link">Contact</a>
+            <a href="/contact/" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="/blog" class="nav-link">Blog</a>
+            <a href="/blog/" class="nav-link">Blog</a>
           </li>
           <li class="nav-item">
-            <a href="/gallery" class="nav-link">Gallery</a>
+            <a href="/gallery/" class="nav-link">Gallery</a>
           </li>
           <li class="nav-item">
-            <a href="/faq" class="nav-link">FAQ</a>
+            <a href="/faq/" class="nav-link">FAQ</a>
           </li>
         </ul>
       </div>

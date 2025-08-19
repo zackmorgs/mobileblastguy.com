@@ -1,8 +1,8 @@
 <?php get_header(); ?>
-<main>
+<main id="more">
     <header class="hero">
         <div class="hero-content">
-            <h3>Contact</h3>
+            <h3>More Services</h3>
         </div>
     </header>
     <section>

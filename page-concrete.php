@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-<main>
+<main id="concrete">
     <header class="hero">
-        <h3>Concrete Services</h3>
+        <div class="hero-content">
+            <h3>Concrete Services</h3>
+        </div>
     </header>
     <section>
 

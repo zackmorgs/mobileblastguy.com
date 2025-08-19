@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-<main>
+<main id="automotive">
     <header class="hero">
-        <h3>Automotive Services</h3>
+        <div class="hero-content">
+            <h3>Automotive Services</h3>
+        </div>
     </header>
     <section>
 

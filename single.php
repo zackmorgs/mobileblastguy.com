@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <div class="header">
-    <h3><?php the_title(); ?></h3>
+    <div class="hero-content">
+        <h3><?php the_title(); ?></h3>
+    </div>
 </div>
 <section id="content_single">
     <article class="content">

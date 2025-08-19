@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-<main>
+<main id="marine">
     <header class="hero">
-        <h3>Marine Services</h3>
+        <div class="hero-content">
+            <h3>Marine Services</h3>
+        </div>
     </header>
     <section>
 

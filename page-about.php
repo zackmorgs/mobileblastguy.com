@@ -1,19 +1,22 @@
 <?php get_header(); ?>
+<main id="about_page">
+    <header class="hero">
+        <div class="hero-content">
+            <h3>About</h3>
+        </div>
+    </header>
+    <section id="content_about">
+        <article class="content">
+            <?php
+            if (have_posts()):
+                while (have_posts()):
+                    the_post();
+                    the_content(); // This is the important line!
+                endwhile;
+            endif;
+            ?>
+        </article>
+    </section>
 
-<header class="hero">
-    <h3>About</h3>
-</header>
-<section id="content_about">
-    <article class="content">
-        <?php
-        if (have_posts()):
-            while (have_posts()):
-                the_post();
-                the_content(); // This is the important line!
-            endwhile;
-        endif;
-        ?>
-    </article>
-</section>
-
+</main>
 <?php get_footer(); ?>

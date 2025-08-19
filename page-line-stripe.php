@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-<main>
+<main id="line_stripe">
     <header class="hero">
-        <h3>Line Stripe Services</h3>
+        <div class="hero-content">
+            <h3>Line Stripe Services</h3>
+        </div>
     </header>
     <section>
 

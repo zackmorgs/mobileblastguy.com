@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <main>
     <header class="hero">
-        <h3>FAQ</h3>
+        <div class="hero-content">
+            <h3>FAQ</h3>
+        </div>
     </header>
     <section>
 

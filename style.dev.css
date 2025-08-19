@@ -300,17 +300,41 @@ body {
   background-color: var(--dark);
   color: var(--grey);
   margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 0 1rem; */
+}
+
+a {
+  color: var(--orange);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid currentColor;
 }
 
 main {
-  position: absolute;
-
-  top: 0px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow-y: scroll;
   padding-top: 60px;
+}
+
+footer {
+  margin-top:1rem;
+  background-color: #141414;
+  color: var(--grey);
+  padding: 1rem;
+  text-align: center;
+  font-family: 'RBNo3.1', sans-serif;
+  font-weight: 500;
+  position: relative;
+  
 }
 
 #nav_main {
@@ -328,7 +352,7 @@ main {
   justify-content: end;
   align-items: center;
   backdrop-filter: blur(0.5rem);
-  box-shadow: 0px 0.25rem 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0.25rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 #nav_toggle {
@@ -395,6 +419,7 @@ main {
   transition: color 0.3s ease;
   display: block;
   text-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  border-bottom: none
 }
 
 .open .nav-list {
@@ -411,17 +436,30 @@ main {
 }
 
 .hero {
-  padding: 2rem 1rem;
+
   text-align: center;
   background: #111111;
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
   /* margin: 1rem; */
   /* border-radius: 0.5rem; */
+  background-size: cover;
+}
+
+#home .hero {
+  /* background: #073385; */
+  background:#2d2d2d;
+  box-shadow: 0px 4px 16px #00000047
 }
 
 .hero h3 {
   text-transform: uppercase;
   margin-top: 2rem;
+}
+
+.hero-content {
+  padding: 2rem 1rem;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+  text-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -437,6 +475,16 @@ main {
   font-weight: 500;
   box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
   text-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.5);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform:scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 .btn.btn-primary {
@@ -449,12 +497,15 @@ main {
 }
 
 #about {
-  /* background: #161616; */
+  background-color: #222222;
+
   padding: 2rem 1rem;
   text-align: center;
 }
 
-#services {}
+#about h3 {
+  color: var(--orange);
+}
 
 #services h2 {
   /* text-align: center; */
@@ -475,11 +526,17 @@ main {
 .service {
   list-style-type: none;
   margin-bottom: 0.5rem;
-  background-size: cover;
+  background-size: 100%;
   box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.25);
   border-radius: 0.5rem;
   background-position: center;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.service:hover,
+.service:active {
+  transform: scale(1.025);
 }
 
 .service a {
@@ -492,51 +549,67 @@ main {
   align-items: center;
   justify-content: space-between;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
-  font-family:'RBNo3.1 Book', sans-serif;
+  font-family: 'RBNo3.1 Book', sans-serif;
   font-size: 1.125rem;
+  border-bottom: none;
+  background-size: 100%;
+  transition: background-size 0.3s ease, color 0.3s ease;
 }
+
 
 .service a img {
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.75));
+  height: 2rem;
+  width: 2rem;
 }
 
-#service_automotive {
+#service_automotive,
+#automotive .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-automotive.jpg');
 }
 
-#service_marine {
+#service_marine,
+#marine .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-marine.jpg');
 }
 
-#service_concrete {
+#service_concrete,
+#concrete .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-concrete.jpg');
 }
 
-#service_wood {
+#service_wood,
+#wood .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-wood.jpg');
 }
 
-#service_fleet {
+#service_fleet,
+#fleet .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-fleet-vehicle.jpg');
 }
 
-#service_fire {
+#service_fire,
+#fire-restoration .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-fire.jpg');
 }
 
-#service_graffiti {
+#service_graffiti,
+#graffiti .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-graffiti.jpg');
 }
 
-#service_line_stripe {
+#service_line_stripe,
+#line_stripe .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-line-stripe.jpg');
 }
 
-#service_heavy_equipment {
+#service_heavy_equipment,
+#heavy-equipment .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-heavy-equipment.jpg');
 }
 
-#service_pools {
+#service_pools,
+#pool .hero {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-pools.jpg');
 }
 
@@ -544,13 +617,114 @@ main {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-offshore.jpg');
 }
 
+#service_housing,
+#housing .hero {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-housing.jpg');
+}
+
+#service_more,
+#more .hero {
+  background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-more.jpg');
+}
+
 @media (min-width: 414px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .hero #logo {
+    max-width: 48ch;
+  }
+
+  #service_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #automotive .hero,
+  #marine .hero {
+    background-position-y: -196px;
+  }
+
+}
 
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  #nav_main {
+    height: 60px;
+  }
 
-@media (min-width: 1280px) {}
+  .nav-bar {
+    padding: 0;
+  }
+
+  #nav_toggle {
+    display: none;
+  }
+
+  .nav-list {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .nav-link {
+    text-align: center;
+    border-bottom: 2px solid var(--dark-gray);
+  }
+
+  .nav-link.active {
+    border-bottom: 2px solid var(--orange);
+    color: var(--orange);
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    padding-top: 0;
+  }
+  #nav_main {
+    position:relative;
+  }
+  #nav_links {
+  }
+  .nav-list {
+    box-shadow:none;
+  }
+  #home .hero {
+    margin-top:1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  #services .content {
+    padding: 1rem 0;
+  }
+  .nav-item {
+    width:auto;
+  }
+  #bottom_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  #about {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius:0.5rem;
+  }
+  #map {
+    border-radius:0.5rem;
+    overflow:hidden;
+  }
+  #map .content {
+    padding:0;
+  }
+
+  footer {
+    border-top-right-radius:0.5rem;
+    border-top-left-radius:0.5rem;
+  }
+}
 
 @media (min-width: 1536px) {}

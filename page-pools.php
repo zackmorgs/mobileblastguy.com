@@ -1,7 +1,9 @@
 <?php get_header(); ?>
-<main>
+<main id="pool">
     <header class="hero">
-        <h3>Pool Services</h3>
+        <div class="hero-content">
+            <h3>Pool Services</h3>
+        </div>
     </header>
     <section>
 
