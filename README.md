@@ -2,6 +2,7 @@
 A custom classic WordPress theme for a clients dustless blasting company. 
 
 ## Video Journal
+- [Day 4 - Homepage Final Approval](https://youtu.be/2BMIsDmBJVo)
 - [Day 3 - Before/After Slider, more content homepage](https://youtu.be/KsJrcbYqRXQ)
 - [Day 2 - Tablet Styles](https://youtu.be/d3E-yVRLHlc)
 - [Day 1 - Mobile Nav Creation](https://youtu.be/9BNq1JqYR5A)
