@@ -31,14 +31,10 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+  background:var(--orange);;
+  color: var(--dark);
 }
 
 /*
@@ -551,6 +547,10 @@ footer {
   text-align: center;
 }
 
+#map h3 {
+  text-align: center;
+}
+
 #what_we_do p,
 #about p {
   max-width: 32ch;
@@ -775,7 +775,7 @@ footer {
     max-width: 48ch;
   }
 
-  #services h2 {
+  #services h2e {
     text-align: center;
   }
 

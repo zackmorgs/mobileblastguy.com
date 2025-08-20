@@ -13,7 +13,7 @@
                 <p>Follow Us:</p>
                 <ul id="social_icons">
                     <li>
-                        <a href="">
+                        <a href="https://www.facebook.com/mobileblastguy" target="_blank" aria-label="Follow us on Facebook">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/facebook_icon.svg"
                                 alt="Facebook Icon">
                         </a>
@@ -92,7 +92,7 @@
 
     </section>
 
-    <?php get_template_part('template-parts/components/services-list'); ?>
+    <?php get_template_part(slug: 'template-parts/components/services-list'); ?>
 
     <div id="bottom_content">
         <section id="about">
@@ -127,6 +127,7 @@
     </section> -->
         <section id="map">
             <div class="content">
+                <h3>Find Us</h3>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24054.619077698764!2d-83.535954!3d41.094618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8839558e36bc9061%3A0xa6be01d670b0f3b0!2smobile%20blast%20guy!5e0!3m2!1sen!2sus!4v1755521810272!5m2!1sen!2sus"
                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
