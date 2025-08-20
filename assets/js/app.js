@@ -29,10 +29,14 @@ const handleActiveNavLink = () => {
     });
 };
 
-const slider = () => {
-    document.querySelector('.slider-control').addEventListener('input', (e) => {
-        const after = document.querySelector('.slider .after');
-        after.style.width = `${e.target.value}%`;
+const handleBeforeAfterSliders = () => {
+    const sliders = document.querySelectorAll('.slider');
+    sliders.forEach((slider) => {
+        const control = slider.querySelector('.slider-control');
+        const after = slider.querySelector('.after');
+        control.addEventListener('input', (e) => {
+            after.style.width = `${e.target.value}%`;
+        });
     });
 }
 
@@ -40,5 +44,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('loaded');
     handleNavState();
     handleActiveNavLink();
-    slider();
+    handleBeforeAfterSliders();
 });
