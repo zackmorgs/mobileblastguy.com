@@ -33,7 +33,8 @@ html {
 
 
 ::selection {
-  background:var(--orange);;
+  background: var(--orange);
+  ;
   color: var(--dark);
 }
 
@@ -433,6 +434,7 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25)); */
+  margin-bottom: 1rem;
 }
 
 .hero {
@@ -478,15 +480,18 @@ footer {
   /* filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.75)); */
 }
 
-#home .hero {
-  /* background: #073385; */
-  background: #2d2d2d;
-  box-shadow: 0px 4px 16px #00000047
+#home {
+  .hero {
+    /* background: #073385; */
+    background: #2d2d2d;
+    box-shadow: 0px 4px 16px #00000047
+  }
 }
 
-.hero h3 {
-  text-transform: uppercase;
-  margin-top: 2rem;
+.hero {
+  h3 {
+    text-transform: uppercase;
+  }
 }
 
 .hero-content {
@@ -495,7 +500,8 @@ footer {
   text-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-.btn {
+.btn,
+.wp-block-button__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -527,17 +533,27 @@ footer {
 
 .content {
   padding: 1rem;
+  margin: 0 auto;
+}
+
+.content-text {
+  max-width: 48ch;
+  margin: 0 auto;
+}
+
+#content_about {
+  background: #222;
 }
 
 #about {
   background-color: #222222;
-
   padding: 2rem 1rem;
   text-align: center;
 }
 
 #about h3,
-#what_we_do h2 {
+#what_we_do h2,
+.wp-block-heading {
   color: var(--orange);
 }
 
@@ -829,17 +845,17 @@ footer {
   .slider {
     max-width: 48ch;
     margin: 0 auto;
-    height:100%;
+    height: 100%;
   }
 
   #what_we_do .md-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    place-content:center;
-    margin-bottom:2rem;
+    place-content: center;
+    margin-bottom: 2rem;
   }
-  
+
   #about .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -864,6 +880,16 @@ footer {
 
   .nav-list {
     box-shadow: none;
+  }
+
+  .hero {
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .hero .btn-primary {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
   }
 
   #home .hero,
@@ -911,6 +937,7 @@ footer {
   #about .content {
     grid-template-columns: 1fr;
   }
+
   footer {
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
