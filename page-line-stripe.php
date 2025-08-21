@@ -3,6 +3,10 @@
     <header class="hero">
         <div class="hero-content">
             <h3>Line Stripe Services</h3>
+            <p>Erase Old Lines, Make Room for the New</p>
+            <a href="tel:+14199575665" class="btn btn-primary">
+                <span>Get a Quote </span>
+            
         </div>
     </header>
     <section id="content_about">

@@ -4,23 +4,14 @@
         <div class="hero-content">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/mobile-blast-guy-logo.svg"
                 alt="Mobile Blast Guy Logo" id="logo">
-            <h3>Contact</h3>
-                        <a href="tel:+14199575665" class="btn btn-primary">
-                <span>Get a Quote </span>
-            </a>
+            <h3>404 - Page Not Found</h3>
         </div>
     </header>
     <section id="content_about">
         <article class="content">
             <div class="content-text">
-                <?php
-                if (have_posts()):
-                    while (have_posts()):
-                        the_post();
-                        the_content(); // This is the important line!
-                    endwhile;
-                endif;
-                ?>
+                <p>Sorry, the page you are looking for does not exist.</p>
+                <p>Please check the URL or return to the <a href="<?php echo home_url(); ?>">homepage</a>.</p>
             </div>
         </article>
     </section>
