@@ -2,6 +2,8 @@
 <main id="more">
     <header class="hero">
         <div class="hero-content">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/mobile-blast-guy-logo.svg"
+                alt="Mobile Blast Guy Logo" id="logo">
             <h3>More Services</h3>
             <p>Versatile Solutions for Unique Projects</p>
             <a href="tel:+14199575665" class="btn btn-primary">

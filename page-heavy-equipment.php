@@ -2,6 +2,8 @@
 <main id="heavy-equipment">
     <header class="hero">
         <div class="hero-content">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/mobile-blast-guy-logo.svg"
+                alt="Mobile Blast Guy Logo" id="logo">
             <h3>Heavy Equipment Services</h3>
             <p>Restore and Maintain Your Equipment</p>
             <a href="tel:+14199575665" class="btn btn-primary">
@@ -9,7 +11,7 @@
             </a>
         </div>
     </header>
-     <section id="content_about">
+    <section id="content_about">
         <article class="content">
             <div class="content-text">
                 <?php
