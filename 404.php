@@ -12,6 +12,9 @@
             <div class="content-text">
                 <p>Sorry, the page you are looking for does not exist.</p>
                 <p>Please check the URL or return to the <a href="<?php echo home_url(); ?>">homepage</a>.</p>
+                <!-- <div class="search-box" style="margin: 20px auto; max-width: 400px;">
+                    <?php get_search_form(); ?>
+                </div> -->
             </div>
         </article>
     </section>
