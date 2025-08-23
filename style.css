@@ -443,7 +443,9 @@ footer {
   /* filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25)); */
   margin-bottom: 1rem;
 }
-
+#hero_home_link {
+  border:none;
+}
 .hero {
 
   text-align: center;
@@ -807,6 +809,51 @@ footer {
   background-image: url('/wp-content/themes/mobileblastguy.com/assets/img/service-more.png');
 }
 
+.content-float {
+  max-width: 48ch;
+  margin: 0 auto;
+  background: #222;
+  padding: 1rem;
+  box-shadow: 0px .25rem .5rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  position: relative;
+  top: -2rem;
+}
+
+#heading_latest_posts {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'RBNo3.1', sans-serif;
+  font-weight: 500;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+
+.excerpt-permalink {
+  padding:1rem;
+  color:#f1f1f1;
+  text-decoration:none;
+  border:none;
+}
+
+.blog-post-excerpt {
+  h2 {
+    font-family: 'RBNo3.1 Book', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color:var(--orange);
+  }
+}
+#content_single {
+  background-color: #222222;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+}
+article.content {
+  max-width: 48ch;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 @media (min-width: 414px) {}
 
 @media (min-width: 768px) {
