@@ -849,7 +849,11 @@ footer {
 
   .nav-link {
     text-align: center;
-    border-bottom: 2px solid var(--dark-gray);
+    // border-bottom: 2px solid var(--dark-gray);
+    &:hover {
+      // color: var(--orange);
+      border-bottom: 2px solid var(--orange);
+    }
   }
 
   .nav-link.active {
